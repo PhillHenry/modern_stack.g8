@@ -2,8 +2,8 @@ import Dependencies._
 
 ThisBuild / scalaVersion     := "3.1.1"
 ThisBuild / version          := "0.1.0"
-ThisBuild / organization     := $organization$
-ThisBuild / organizationName := $organizationName$
+ThisBuild / organization     := "$organization$"
+ThisBuild / organizationName := "$organizationName$"
 
 ThisBuild / evictionErrorLevel := Level.Warn
 ThisBuild / scalafixDependencies += Libraries.organizeImports
