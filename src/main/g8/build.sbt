@@ -1,5 +1,7 @@
 import Dependencies._
 
+name := "$name$"
+
 ThisBuild / scalaVersion     := "3.1.1"
 ThisBuild / version          := "0.1.0"
 ThisBuild / organization     := "$organization$"
@@ -52,7 +54,7 @@ val commonSettings = List(
 )
 
 def dockerSettings(name: String) = List(
-  Docker / packageName := s"modernstack-\$name",
+  Docker / packageName := s"\$organizationName-$name",
   dockerBaseImage      := "jdk17-curl:latest",
   dockerExposedPorts ++= List(8080),
   makeBatScripts       := Nil,
@@ -61,7 +63,7 @@ def dockerSettings(name: String) = List(
 
 lazy val root = (project in file("."))
   .settings(
-    name := "modernstack"
+    name := s"\$name"
   )
   .aggregate(lib, core, it)
 
