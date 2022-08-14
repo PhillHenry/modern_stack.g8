@@ -54,7 +54,7 @@ val commonSettings = List(
 )
 
 def dockerSettings(name: String) = List(
-  Docker / packageName := s"$organizationName-$name",
+  Docker / packageName := organizationName + "-" + name,
   dockerBaseImage      := "jdk17-curl:latest",
   dockerExposedPorts ++= List(8080),
   makeBatScripts       := Nil,
@@ -63,7 +63,7 @@ def dockerSettings(name: String) = List(
 
 lazy val root = (project in file("."))
   .settings(
-    name := s"$name"
+    name := name
   )
   .aggregate(lib, core, it)
 
