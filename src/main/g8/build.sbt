@@ -1,6 +1,6 @@
 import Dependencies._
 
-app_name := "$name$"
+app_name := "$app_name$"
 
 ThisBuild / scalaVersion     := "3.1.1"
 ThisBuild / version          := "0.1.0"
