@@ -25,7 +25,7 @@ if [[ -d ./src/main/g8 ]]; then
         cd .makeitg8
    fi
 
-   sbt "run --noclear --force --source ../../target/sandbox/ModernScalaStack --target ../.. --name modern_stack.g8 --description modern_stack.g8  -K templateGithubUser=PhillHenry organization=organization" -Dbuild.test.command="sbt test" 
+   sbt "run --noclear --force --source ../../target/sandbox/ModernScalaStack --target ../.. --name ModernScalaStack.g8 --description ModernScalaStack.g8  -K templateGithubUser=PhillHenry organization=uk.co.odinconsultants organizationName=OdinConsultants" -Dbuild.test.command="sbt test" 
 
    echo "Done, updated the template based on target/sandbox/ModernScalaStack"
    exit 0

@@ -1,7 +1,5 @@
 import Dependencies._
 
-app_name := "$app_name$"
-
 ThisBuild / scalaVersion     := "3.1.1"
 ThisBuild / version          := "0.1.0"
 ThisBuild / organization     := "$organization$"
@@ -63,7 +61,7 @@ def dockerSettings(name: String) = List(
 
 lazy val root = (project in file("."))
   .settings(
-    name := app_name
+    name := "modernstack"
   )
   .aggregate(lib, core, it)
 

@@ -16,7 +16,7 @@ if [[ -d ./src/main/g8 ]]; then
     cd target/sandbox
     find . -not -name .git -delete
 
-    g8 file://../../../${TEMPLATE} --organization="organization" -o ModernScalaStack "$@"
+    g8 file://../../../${TEMPLATE} --organization="uk.co.odinconsultants" --organizationName="OdinConsultants" -o ModernScalaStack "$@"
 
     if [[ -d ./ModernScalaStack ]]; then
         cd ModernScalaStack
