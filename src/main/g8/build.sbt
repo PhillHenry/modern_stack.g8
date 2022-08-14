@@ -1,6 +1,6 @@
 import Dependencies._
 
-name := "$name$"
+app_name := "$name$"
 
 ThisBuild / scalaVersion     := "3.1.1"
 ThisBuild / version          := "0.1.0"
@@ -63,7 +63,7 @@ def dockerSettings(name: String) = List(
 
 lazy val root = (project in file("."))
   .settings(
-    name := name
+    name := app_name
   )
   .aggregate(lib, core, it)
 
