@@ -1,7 +1,7 @@
-modern_stack.g8
+ModernScalaStack.g8
 ===
 
-A [Giter8](http://www.foundweekends.org/giter8/) template for creating modern_stack.g8
+A [Giter8](http://www.foundweekends.org/giter8/) template for creating ModernScalaStack.g8
 
 
 
@@ -12,14 +12,14 @@ How to create a new project based on the template?
 * Decide your project name (the hardest part :))
 * Run the command
 
-    `sbt new PhillHenry/modern_stack.g8 --branch master --organization="organization" -o ModernScalaStack`
+    `sbt new PhillHenry/ModernScalaStack.g8 --branch master --organization="uk.co.odinconsultants" --organizationName="OdinConsultants" -o ModernScalaStack`
 
 or    
 
 * Install g8 commandline tool (http://www.foundweekends.org/giter8/setup.html)
 * Run the command
 
-    `g8 PhillHenry/modern_stack.g8 --branch master --organization="organization" -o ModernScalaStack`
+    `g8 PhillHenry/ModernScalaStack.g8 --branch master --organization="uk.co.odinconsultants" --organizationName="OdinConsultants" -o ModernScalaStack`
     
 and then
     
@@ -63,7 +63,9 @@ What is in the template?
 Assuming the command above 
 the template will supply the following values for the placeholders:
 
-    $organization$ -> organization
+    $organization$ -> uk.co.odinconsultants
+	$organizationName$ -> OdinConsultants
+	$organizationNameNoSpaceLowercase$ -> odinconsultants
 
 and produce the folders and files as shown below:
 
