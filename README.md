@@ -57,6 +57,11 @@ or (safer) ...
 * run `./update-g8.sh` in order to port your changes back to the template.
 * run `./test.sh` again to validate your changes
 
+NOTE: the update script seems to demand Java 8 so run something like this before you run it:
+export JAVA_HOME=/usr/local/bin/Java/jdk1.8.0_241/
+export PATH=$JAVA_HOME/bin:$PATH
+- Phillip Henry
+
 What is in the template?
 --
 
