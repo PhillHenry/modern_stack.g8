@@ -12,21 +12,25 @@ How to create a new project based on the template?
 * Decide your project name (the hardest part :))
 * Run the command
 
-    `sbt new PhillHenry/ModernScalaStack.g8 --branch master --organization="uk.co.odinconsultants" --organizationName="OdinConsultants" -o ModernScalaStack`
+    `sbt new PhillHenry/modern_stack.g8 --branch master  --name=YOUR_APP --organization=YOUR_FQN --organizationName=YOUR_ORG`
 
 or    
 
 * Install g8 commandline tool (http://www.foundweekends.org/giter8/setup.html)
 * Run the command
 
-    `g8 PhillHenry/ModernScalaStack.g8 --branch master --organization="uk.co.odinconsultants" --organizationName="OdinConsultants" -o ModernScalaStack`
+    `g8 https://github.com/PhillHenry/modern_stack.g8 --name=YOUR_APP --organization=YOUR_FQN --organizationName=YOUR_ORG`
     
 and then
     
-    cd ModernScalaStack
+    cd YOUR_APP
     git init
 	git add .
 	git commit -m start
+	git branch -M main
+	git remote add origin https://github.com/YOUR_USER/YOUR_APP.git
+	git push -u origin main
+
   
 * Test generated project using command 
 
@@ -58,9 +62,7 @@ or (safer) ...
 * run `./test.sh` again to validate your changes
 
 NOTE: the update script seems to demand Java 8 so run something like this before you run it:
-export JAVA_HOME=/usr/local/bin/Java/jdk1.8.0_241/
-export PATH=$JAVA_HOME/bin:$PATH
-- Phillip Henry
+`export JAVA_HOME=/usr/local/bin/Java/jdk1.8.0_241/ && export PATH=$JAVA_HOME/bin:$PATH`
 
 What is in the template?
 --
