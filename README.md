@@ -12,7 +12,7 @@ How to create a new project based on the template?
 * Decide your project name (the hardest part :))
 * Run the command
 
-    `sbt new PhillHenry/modern_stack.g8 --branch master  --name=YOUR_APP --organization=YOUR_FQN --organizationName=YOUR_ORG`
+    `sbt new PhillHenry/modern_stack.g8 --name=YOUR_APP --organization=YOUR_FQN --organizationName=YOUR_ORG`
 
 or    
 
